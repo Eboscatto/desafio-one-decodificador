@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css" > 
+    <link rel="shortcut icon" href="/assets/logoOne.png"> 
+    <title>Decodificador de texto</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+</head>
+<body>    
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Decodificador de texto</h1>
+    </header>   
+    <div class="container">          
+        <div class="container__criptografar">
+            <textarea nome="texto" class="container__criptografar__texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>        
+        <div class="container__exigencias">
+            <p class="container__exigencias__p">Somente letras minúsculas e sem acentos.</p>
+        </div>
+        <div class="container__botoes">
+            <button class="container__botoes__btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>
+            <input type="button" class="container__botoes__btn-descriptografar" value="Descriptografar" onclick="descriptografar()"/>
+            <button class="container__botoes__btn-copiar" type="button" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <div class="container__mensagens">
+        <img class="container__mensagens__imagem" src="./assets/detetive.jpg" alt="" id="imagem"/>
+        <div class="container__mensagens__mensagem-criptografada" id="mensagem-criptografada">
+            <h2 id="titulo-mensagem">Nenhuma mensagem foi encontrada!</h2>
+            <p id="paragrafo">Digite o texto que deseja criptografar ou descriptografar</p>                    
+        </div>
+    </div>
+</div>  
+<footer class="conatiner__rodape">
+    <p class="container__rodape__texto">Desenvolvido por: Everaldo Boscatto em parceria com o programa ONE T6 - 2024.</p>
+</footer>
+<script src="/js/index.js"></script> 
+</body>
+</html>
