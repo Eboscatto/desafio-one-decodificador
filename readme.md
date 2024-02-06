@@ -24,7 +24,7 @@ Clone o projeto com o comando abaixo:
 ```bash
   # Clone o repositório
   ❯ git clone 
-https://github.com/Eboscatto/desadio-one-decodificador.git
+https://github.com/Eboscatto/desafio-one-decodificador.git
 	# Entre no diretório
   ❯ cd [nome-projeto]
 	# Execute o projeto
