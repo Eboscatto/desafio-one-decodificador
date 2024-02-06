@@ -239,7 +239,7 @@ body {
 }
 
 /* Responsividade */
-@media (max-width: 1200px) {
+@media (max-width: 57.5em) {
     .cabecalho {
         padding: 10%;        
     }  
@@ -249,9 +249,8 @@ body {
     }
     
     .container {
-        display: flex;
-        flex-direction: column-reverse;
-        width: auto;
+        display: flex;        
+        flex-direction: row;
     }
 
     .container__criptografar {
