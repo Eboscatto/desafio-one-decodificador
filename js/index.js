@@ -2,7 +2,7 @@
 function criptografar(){
     let texto = document.getElementById("texto").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
     let tituloMensagem = document.getElementById("titulo-mensagem");
-    let paragrafo = document.getElementById("paragrafo");
+    let paragrafo = document.getElementById("texto-mensagem");
     let imagem = document.getElementById("imagem");
 
 
@@ -29,7 +29,7 @@ function criptografar(){
 function descriptografar() {
     let texto = document.getElementById("texto").value;
     let tituloMensagem = document.getElementById("titulo-mensagem");
-    let paragrafo = document.getElementById("paragrafo");
+    let paragrafo = document.getElementById("texto-mensagem");
     let imagem = document.getElementById("imagem");
   
     let textoCriptografado = texto
@@ -57,7 +57,7 @@ function descriptografar() {
   function copiarTexto() {
     let texto = document.getElementById("texto").value;
     let tituloMensagem = document.getElementById("titulo-mensagem");
-    let paragrafo = document.getElementById("paragrafo");
+    let paragrafo = document.getElementById("texto-mensagem");
     let imagem = document.getElementById("imagem");
     let textoCopiado = document.getElementById("texto");
     let textoCopiar = texto;

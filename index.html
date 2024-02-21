@@ -11,31 +11,32 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
 </head>
 <body>    
-    <header class="cabecalho">
+    <img class="logo" src="/assets/logo.png">
+    <header class="cabecalho">        
         <h1 class="cabecalho__titulo">Decodificador de texto</h1>
     </header>   
-    <div class="container">          
-        <div class="container__criptografar">
-            <textarea nome="texto" class="container__criptografar__texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>        
-        <div class="container__exigencias">
-            <p class="container__exigencias__p">Somente letras minúsculas e sem acentos.</p>
+    <section class="input">          
+        <div class="input__criptografar">
+            <textarea nome="texto" class="input__criptografar__texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>        
+        <div class="input__exigencias">
+            <p class="input__exigencias__texto"><strong>!</strong> Somente letras minúsculas e sem acentos.</p>
         </div>
-        <div class="container__botoes">
-            <button class="container__botoes__btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>
-            <input type="button" class="container__botoes__btn-descriptografar" value="Descriptografar" onclick="descriptografar()"/>
-            <button class="container__botoes__btn-copiar" type="button" onclick="copiarTexto()">Copiar</button>
+        <div class="input__botoes">
+            <button class="input__botoes__btn-criptografar" type="button" onclick="criptografar()">Criptografar</button>
+            <input type="button" class="input__botoes__btn-descriptografar" value="Descriptografar" onclick="descriptografar()"/>
+            <button class="input__botoes__btn-copiar" type="button" onclick="copiarTexto()">Copiar</button>
         </div>
-    </div>
-    <div class="container__mensagens">
-        <img class="container__mensagens__imagem" src="./assets/detetive.jpg" alt="" id="imagem"/>
-        <div class="container__mensagens__mensagem-criptografada" id="mensagem-criptografada">
+    </section>
+    <section class="mensagens">
+        <img class="mensagens__imagem" src="./assets/detetive.jpg" alt="" id="imagem"/>
+        <div class="mensagens__mensagem-criptografada" id="mensagem-criptografada">
             <h2 id="titulo-mensagem">Nenhuma mensagem foi encontrada!</h2>
-            <p id="paragrafo">Digite o texto que deseja criptografar ou descriptografar</p>                    
+            <p id="texto-mensagem">Digite o texto que deseja criptografar ou descriptografar.</p>                    
         </div>
-    </div>
+    </section>
 </div>  
-<footer class="conatiner__rodape">
-    <p class="container__rodape__texto">Desenvolvido por: Everaldo Boscatto em parceria com o programa ONE T6 - 2024.</p>
+<footer class="rodape">
+    <p class="rodape__texto">Desenvolvido por: Everaldo Boscatto em parceria com o programa ONE T6 - 2024.</p>
 </footer>
 <script src="/js/index.js"></script> 
 </body>

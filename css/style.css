@@ -17,59 +17,65 @@
     padding: 0;
     border: 0;
 }
+.logo {
+    margin-top: 2%;
+}
 
 body {
+    width: 100%;
     height: 100vh;                        
     box-sizing: border-box;                
     background-color: var(--cor-um);     
 }
    
 .cabecalho {  
+    width: 100%;
+    margin-top: -2%;
     padding: 2% 0% 0% 8.7%;     
 }
 
 .cabecalho__titulo {
     display: flex;
     font-family: var(--fonte-primaria);
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     font-weight: 600;
     color: var(--cor-dois);    
 }
 
-.container{
+.input{
     position: relative;   
     width: 100vw;
-    height: 100vh;
+    height: 74vh;
     background-color: var(--cor-um);
 }
 
-.container__criptografar__texto {
+.input__criptografar__texto {
     position: absolute;
-    width: 42%;
-    height: 60%;
-    left: 3%;
-    top: 15%;
+    width: 30%;
+    height: 50%;
+    left: 9%;
+    top: 9%;
     border: none;
     font-family: var(--fonte-primaria);
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.5rem;
     line-height: 150%;
     padding: 8px;
     background-color:var(--cor-quatro);    
 }
 
-.container__criptografar__texto::placeholder{
+.input__criptografar__texto::placeholder{
     color: var(--cor-dois);  
 }
 
-.container__criptografar__texto:focus,
-.container__criptografar__texto:active{
+.input__criptografar__texto:focus,
+.input__criptografar__texto:active{
     border: none;
     outline: none;
 }
 
-.container__exigencias {
+.input__exigencias {       
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,14 +84,14 @@ body {
     position: absolute;
     width: 80%;
     left: 3%;
-    top: 80%;
+    top: 70%;
 }
 
-.container__exigencias__p {
+.input__exigencias__texto {   
     font-family: var(--fonte-primaria);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1rem;
     line-height: 150%;
     color: var(--cor-tres);
     opacity: 0.8;
@@ -94,7 +100,18 @@ body {
     flex-grow: 0;
 }
 
-.container__botoes{
+strong {
+    background-color: black;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    font-size: 1rem;
+    padding: 0 7px 0 7px;
+    color:whitesmoke;
+    
+}
+
+.input__botoes{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -102,11 +119,12 @@ body {
     position: absolute;
     width: 80%;
     left: 3%;
-    top: 82%;
+    top: 76%;
     gap: 15px;
+    font-size: 18px;
 }
 
-.container__botoes__btn-criptografar {
+.input__botoes__btn-criptografar {
     align-items: center;
     justify-content: center;
     padding: 2%;
@@ -114,14 +132,13 @@ body {
     width: 25%;
     background-color: var(--cor-dois);
     border-radius: 24px;
-    font-family: var(--fonte-primaria);
-    font-size: 18px;
+    font-family: var(--fonte-primaria);   
     line-height: 19px;
     text-align: center;
     color: var(--cor-quatro);
 }
 
-.container__botoes__btn-descriptografar {
+.input__botoes__btn-descriptografar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -134,14 +151,13 @@ body {
     border: 1px solid var(--cor-dois);
     border-radius: 24px;
     font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 400;    
     line-height: 19px;
     text-align: center;
     color: var(--cor-dois);
 }
 
-.container__botoes__btn-copiar {
+.input__botoes__btn-copiar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -154,34 +170,33 @@ body {
     border: 1px solid var(--cor-dois);
     border-radius: 24px;
     font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 400;    
     line-height: 19px;
     text-align: center;
     color: var(--cor-dois);
 }
 
-.container__botoes__btn-criptografar:hover,
-.container__botoes__btn-descriptografar:hover,
-.container__botoes__btn-copiar:hover {
+.input__botoes__btn-criptografar:hover,
+.input__botoes__btn-descriptografar:hover,
+.input__botoes__btn-copiar:hover {
     margin: 0.3%;
     width: 24.5%;
     pad: 1.8%;    
 }
 
-.container__mensagens {
+.mensagens {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 28%;
-    height: 90%;
+    width: 25%;
+    height: 85%;
     left: 68%;
-    top: 0%;
+    top: 2%;
     background: var(--cor-quatro);
     box-shadow: 0px 24px 32px -8px gba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
-.container__mensagens__mensagem-criptografada {
+.mensagens__mensagem-criptografada {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,7 +209,7 @@ body {
     text-align: center;
 }
 
-.container__mensagens__mensagem-criptografada h2 {
+#titulo-mensagem {
     width: 60%;
     font-family: var(--fonte-primaria);
     font-style: normal;
@@ -205,7 +220,7 @@ body {
     color: var(--cor-cinco);
 }
 
-.container__mensagens__mensagem-criptografada p {
+#texto-mensagem {
     width: 80%;
     font-family: var(--fonte-primaria);
     font-style: normal;
@@ -216,98 +231,112 @@ body {
     color: var(--cor-tres);
 }
 
-.container__mensagens__imagem {
+.mensagens__imagem {
     position: absolute;
     width: 80%;
     height: 50%;
     top: 10%;
 }
 
-.conatiner__rodape {
+.rodape {
     width: 100%;
     background-color: var(--cor-dois);
-    padding: 0.2%;
+    padding: 5px;
 }
 
-.container__rodape__texto {
+.rodape__texto {
     display: flex;
     justify-content: center;
     font-family: var(--fonte-primaria);
     font-size: 18px;
     color: var(--cor-seis);
-    padding-top: 1%;
+    padding-top: 1.1%;
 }
 
 /* Responsividade */
 @media (max-width: 57.5em) {
-    .cabecalho {
+    .cabecalho {        
         padding: 10%;        
     }  
     
     .cabecalho__titulo {
+        margin-top: -2%;
         justify-content: center;
     }
     
-    .container {
+    .input {
         display: flex;        
         flex-direction: row;
     }
 
-    .container__criptografar {
+    .input__criptografar {
         width: 100%;        
     }
 
-    .container__criptografar__texto {
+    .input__criptografar__texto {
         width: 80%;
-        height: 60%;
+        height: 45%;
         left: 10%;
-        top: 5%;
+        top: 0%;
     }
 
-    .container__exigencias {
-        width: 80%;
-        left: 10%;
-        top: 67%;
-    }
-
-    .container__exigencias__p {
-        font-size: 16px;
-    }
-
-    .container__botoes {
+    .input__exigencias {
         width: 80%;
         left: 10%;
-        top: 70%;
+        top: 50%;
+        
     }
 
-    .container__botoes__btn-criptografar,
-    .container__botoes__btn-descriptografar,
-    .container__botoes__btn-copiar {
+    .input__exigencias__texto {
+        font-size: 13px;
+    }
+    strong {
+        font-size: 13px;
+    }
+    .input__botoes {
+        width: 80%;
+        left: 10%;
+        top: 56%;
+        font-size: 13px;
+    }
+
+    .input__botoes__btn-criptografar,
+    .input__botoes__btn-descriptografar,
+    .input__botoes__btn-copiar {
         width: 48%;
         border-radius: 16px;
     }
 
-    .container__botoes__btn-criptografar:hover,
-    .container__botoes__btn-descriptografar:hover,
-    .container__botoes__btn-copiar:hover {
+    .input__botoes__btn-criptografar:hover,
+    .input__botoes__btn-descriptografar:hover,
+    .input__botoes__btn-copiar:hover {
         margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
     }
 
-    .container__mensagens {
+    .mensagens {
         width: 80%;
         height: 15%;
         left: 10%;
-        top: 80%;
+        top: 70%;
+        font-size: 1rem;
     }
 
-    .container__mensagens__mensagem-criptografada {
+    .mensagens__mensagem-criptografada {
         width: 100%;
         top: 5%;
     }
 
-    .container__mensagens__imagem {
+    #titulo-mensagem {        
+        font-size: 16px;        
+    }
+    
+    #texto-mensagem {              
+        font-size: 13px;        
+    }
+
+    .mensagens__imagem {
         top: 0;
         display: none;
         visibility: hidden;
