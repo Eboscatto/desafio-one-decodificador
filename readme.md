@@ -4,20 +4,22 @@ Repositório criado com o objetivo de compartilhar o projeto do desafio do Decod
 O projeto consiste em um programa que faz a criptografia e descriptografia de um determinado texto digitado, também possibilita copiar o texto para área de transferência, oculta e mostra diferentes elementos dependendo do estado. Todo o texto é convertido para letras minúsculas e sem acento.
 ### Tecnologias Utilizadas
 Esse projeto foi criado utilizando as seguintes tecnologias:
-### Front-End
-- [html5](https://www.w3schools.com/html/)
 
-- [css](https://www.w3schools.com/css/)
+<div>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+</div>
 
-- [JavaScript](https://www.javascript.com/)
+### Editor:
+<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
 
-### Editor
-- [Visual Studio Code](https://code.visualstudio.com/)
-
----
 
 ### Boas práticas
 Foram empregadas no projeto as boas práticas recomendadas para o desenvolvimento de sistemas.
+
+
+---
 
 ### Como rodar o projeto
 Clone o projeto com o comando abaixo:

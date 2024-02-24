@@ -248,8 +248,8 @@ strong {
     display: flex;
     justify-content: center;
     font-family: var(--fonte-primaria);
-    font-size: 18px;
-    color: var(--cor-seis);
+    font-size: 14px;
+    color: white;
     padding-top: 1.1%;
 }
 
